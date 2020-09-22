@@ -1,0 +1,83 @@
+[
+{
+     "ID": "1"
+     "Titulo": "Tomb Raider",
+      "Imagem": "imagens/1.png"
+     "Descricao": "Tomb Raider é um videojogo de ação-aventura, décimo título da série Tomb Raider e o quinto produzido pela Crystal Dynamics. Foi publicado pela Square Enix em 5 de Março de 2013 para Microsoft Windows, PlayStation 3 e Xbox 360 e em 2019 Para Google Stadia",
+     "Requerimentos Sistema": ["Sistema Operacional: Windows XP Service Pack 3, Windows Vista, Windows 7 ou Windows 8 (32bit/64bit)", "CPU: AMD Athlon64 X2 2.1 Ghz (4050+)/Intel Core2 Duo 1.86 Ghz (E6300)", "Memória: "1GB (2GB com o Windows Vista)", "DirectX: "9", "VGA:com 512Mb de Video RAM - AMD Radeon HD 2600 XT/ nVidia 8600.", "HD: 6 GB"],
+     "Preco": "R$ 129.95",
+     "Nota Loja": "4.3 /5" 
+    },
+{
+     "ID": "2"
+     "Titulo": "Grand Theft Auto 5",
+      "Imagem": "imagens/2"
+     "Descricao": "Grand Theft Auto V é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o sétimo título principal da série Grand Theft Auto e foi lançado originalmente em 17 de setembro de 2013 para PlayStation 3 e Xbox 360, com remasterizações lançadas em 2014 para PlayStation 4 e Xbox One, em 2015 para Microsoft Windows e em 2021 para PlayStation 5 e Xbox Series X. O jogo se passa no estado ficcional de San Andreas, com a história da campanha um jogador seguindo três criminosos e seus esforços para realizarem assaltos sob a pressão de uma agência governamental. O mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.",
+     "Requerimentos Sistema": ["Sistema Operacional: Windows 8.1 64 Bit, Windows 8 64 bit, Windows 7 64 Bit, ou Windows Vista 64 Bit ", "CPU: Intel Core 2 Quad CPU Q6600 de 2.40 GHz (4CPUs); MD Phenom 9850 Quad-Core (4 CPUs) de 2.5 GHz", "Memória: "4GB", "DirectX: "9", "VGA:NVIDIA 9800 GT 1 Gb ou AMD HD 4870 1 Gb (DirectX 10, 10.1, 11)", "HD: 65 Gb"],
+     "Preco": "R$69,99",
+     "Nota Loja": "5/5" 
+},
+{	 "ID": "3"
+	 "Titulo": "Red Dead Redemption 2",
+ 	 "Imagem": "imagens/3.png"				
+	 "Descricao": "Red Dead Redemption 2, a épica aventura de mundo aberto da Rockstar Games aclamada pela crítica e o jogo mais bem avaliado desta geração de consoles, agora chega aprimorado para PC com conteúdos inéditos no Modo História, melhorias visuais e muito mais.",
+	 "Requerimentos Sistema": ["Sistema Operacional: Windows 7 - Service Pack 1 (6.1.7601)", "CPU: Intel® Core™ i5-2500K / AMD FX-6300", "Memória: "8 GB RAM", "DirectX: "11", "VGA: Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB", "HD: 150 GB de espaço disponível"],
+	 "Preco": "R$ 239,00",
+	 "Nota Loja": "5 /5" 
+},
+{
+ 	"ID": "4"
+	 "Titulo": "Skyrim",
+ 	 "Imagem": "imagens/4.png"				
+	 "Descricao": "O próximo capítulo da esperada saga Elder Scrolls chega dos criadores dos Jogos do Ano de 2006 e 2008, Bethesda Game Studios. Skyrim reimagina e revoluciona o épico 	de fantasia de mundo aberto, trazendo à vida um mundo virtual completo aberto para você explorar da maneira que escolher.",
+	 "Requerimentos Sistema": ["Sistema operacional	 Windows XP 32 ou 64 bits. Processador	 Dual Core 2.0Ghz ou equivalente Memória 2GB de RAM Espaço em disco 6GB Placa de vídeo	 	Qualquer uma de 512MB e compatível com DirectX 9.0c Placa de som Compatível com DirectX 9.0c"],
+	 "Preco": "R$ 39,99",
+	 "Nota Loja": "5 /5" 
+},
+{
+     "ID": "5"
+     "Titulo": "Call of Duty Modern Warfare",
+      "Imagem": "imagens/5.png"
+     "Descricao": "O Call of Duty: Modern Warfare 2019 é o reboot do clássico moderno da Activision disponível para PS4, Xbox One e PC, que reutiliza personagens para contar uma história atualizada. Os eventos do jogo ocorrem num cenário realista e moderno. Pela primeira vez na história da série, Call of Duty: Modern Warfare suporta multijogador em cross-platform. Activision também confirmou que o jogo não tem Passes de Temporada, permitindo assim lançar conteúdo gratuito pós-lançamento.",
+     "Requerimentos Sistema": ["Sistema Operacional: Windows 7 64 bits (SP1) ou Windows 10 64 bits", "CPU: Intel Core i3-4340 ou AMD FX-6300.", "Memoria: 8 GB", "DirectX: DirectX 12", "VGA: GeForce GTX 670 2GB / GTX 1650 4GB ou Radeon HD 7950", "HD: 45 GB"],
+     "Preco": "R$ 199,90",
+     "Nota Loja": "4.5/5" 
+    },
+{
+	"ID": "6"
+	"Titulo": "Need for Speed Head",
+	"Imagem": "imagem/6.png"
+	"Descricao": "Trabalhe durante o dia e arrisque tudo à noite com o Need for Speed Heat, um piloto de corrida corajoso que te coloca contra a força policial corrupta da cidade enquanto você batalha para entrar na elite da corrida de rua. De dia, compita no Speedhunter Showdown – uma competição sancionada onde você ganha dinheiro para customizar e dar um upgrade na sua garagem de carros de alto desempenho.",
+	"Requerimentos Sistema": [Sistema operacional: Windows 10, Processador (AMD): FX-6350 ou equivalente, Processador (Intel): Core i5-3570 ou equivalente, Memória: 8 GB, Placa de vídeo (AMD): Radeon 7970/Radeon R9 280x ou equivalente, Placa de vídeo (NVIDIA): GeForce GTX 760 ou equivalente, Direct X: 11, Requisitos de conexão com a internet: 320 KBPS, Espaço em disco: 50 GB],
+	"Preco": "R$ 149,90",
+	"Nota Loja": "4.6 /5"
+},
+{
+	"ID": "7"
+	"Titulo": "Mortal Kombat 11",
+	"Imagem": "imagem/7.png"
+	"Descricao": "Mortal Kombat está de volta, melhor do que nunca, em uma evolução da icônica franquia. Todas as variações de customização de personagens lhe dão liberdade total para personalizar os lutadores e torná-los únicos. Sinta-se mais perto da luta com os crânios rachados e olhos saltados dos novos gráficos. Com lutadores klássicos, novos e antigos, a incrível cinemática do modo história de Mortal Kombat continua a contar a saga épica de 25 anos atrás. Foi publicado no ano de 2019 para Microsoft windows , PS4, Xbox one, Nintendo switch.",
+	"Requerimentos Sistema": [SO: 64-bit Windows 7 / Windows 10 Processador: Intel Core i5-750, 2.66 GHz / AMD Phenom II X4 965, 3.4 GHz or AMD Ryzen™ 3 1200, 3.1 GHz Memória: 8 GB de RAM Placa de vídeo: NVIDIA® GeForce™ GTX 670 or NVIDIA® GeForce™ GTX 1050 / AMD® Radeon™ HD 7950 or AMD® Radeon™ R9 270 DirectX: Versão 11 Rede: Conexão de internet banda larga],
+	"Preco": "R$ 129,90",
+	"Nota Loja": "4.5 /5"
+},
+{
+	"ID": "8"
+	"Titulo": "FOR HONOR",
+	"Imagem": "imagem/8.png"
+	"Descricao": "Deixe um rastro de destruição num campo de batalha intenso e verossímil em For Honor, um novo e inovador jogo desenvolvido pelo famoso estúdio Ubisoft Montreal em colaboração com outros estúdios da Ubisoft.",
+	"Requerimentos Sistema": [SO: Windows 7, Windows 8.1, Windows 10 (64-bit versions only) Processador: Intel Core i3-550 | AMD Phenom II X4 955 or equivalent Memória: 4 GB de RAM Placa de vídeo: NVIDIA GeForce GTX660/GTX750ti/GTX950/GTX1050 with 2 GB VRAM or more | AMD Radeon HD6970/HD7870/R9 270/R9 370/RX460 with 2 GB VRAM or more Rede: Conexão de internet banda larga Armazenamento: 40 GB de espaço disponível Placa de som: DirectX-Compatible using the latest drivers.],
+	"Preco": "R$ 44,99",
+	"Nota Loja": "4/5"
+},
+{
+	"ID": "9"
+	"Titulo": "Assassin’s Creed IV Black Flag",
+	"Imagem": "imagem/9.png"
+	"Descricao": "O ano é 1715. Os piratas governam o Caribe e estabeleceram sua própria república sem lei, onde a corrupção, a ganância e a crueldade são comuns. Entre esses bandidos está um jovem capitão impetuoso chamado Edward Kenway.",
+	"Requerimentos Sistema": [SO: Windows Vista SP2 or Windows 7 SP1 or Windows 8 (both 32/64bit versions) Processador: Intel Core2Quad Q8400 @ 2.6 GHz or AMD Athlon II X4 620 @ 2.6 GHz Memória: 2 GB de RAM Placa de vídeo: Nvidia Geforce GTX 260 or AMD Radeon HD 4870 (512MB VRAM with shader Model 4.0 or higher) Armazenamento: 30 GB de espaço disponível Placa de som: DirectX Compatible Sound Card with latest drivers Outras observações: Windows-Compatible keyboard and mouse required, controller optional.],
+	"Preco": "R$ 59,99",
+	"Nota Loja": "5/5"
+}
+...
+]
