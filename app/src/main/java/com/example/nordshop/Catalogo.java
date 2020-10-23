@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.nordshop.R;
+
 public class Catalogo extends AppCompatActivity {
     private ImageButton buttonCatalogoBackLogin;
 

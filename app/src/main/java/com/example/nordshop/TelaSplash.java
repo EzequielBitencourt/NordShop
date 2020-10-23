@@ -4,42 +4,33 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.os.Handler;
 import android.widget.ImageButton;
 
 
-
-public class MainActivity extends AppCompatActivity {
+public class TelaSplash extends AppCompatActivity {
 
 
     private ImageButton imageButtonMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
 
 
-
-
-/*
-
-
- */
-
-        imageButtonMenu = (ImageButton) findViewById(R.id.imageButtonMenu);
-        imageButtonMenu.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View view) {
+            public void run() {
                 openLogin();
             }
-        });
-
+        },1000);
 
     }
 
     private void openLogin() {
         Intent intent = new Intent(this, TelaLogin.class);
         startActivity(intent);
+        finish();
     }
 
 

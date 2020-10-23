@@ -2,7 +2,6 @@ package com.example.nordshop;
 
 import com.example.nordshop.exception.IncorrectPasswordException;
 import com.example.nordshop.exception.UserNotFoundException;
-import com.example.nordshop.Usuario;
 
 import java.util.HashMap;
 
