@@ -1,29 +1,29 @@
 package com.example.nordshop;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.example.nordshop.exception.IncorrectPasswordException;
+import com.example.nordshop.exception.UserNotFoundException;
+import com.example.nordshop.Usuario;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import java.util.HashMap;
 
-public class Login extends AppCompatActivity {
-    private Button buttonLogin;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+public class Login {
+    private static final Usuario USUARIO_NAO_ENCONTRADO = null;
 
-        buttonLogin  = (Button) findViewById(R.id.buttonLogin);
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openCatalogo();
-            }
-        });
+    private static HashMap<String, Usuario> usuarios = new HashMap<>();
+
+    static {
+        Usuario admin = new Usuario("admin", "admin");
+
+        usuarios.put(admin.getUsuario(), admin);
     }
-    private void openCatalogo() {
-        Intent intent = new Intent(this, Catalogo.class);
-        startActivity(intent);
+
+    public static Usuario entrar(String usuario, String senha) throws UserNotFoundException, IncorrectPasswordException {
+        Usuario usuarioBuscado = usuarios.get(usuario);
+
+        if(usuarioBuscado == USUARIO_NAO_ENCONTRADO) throw new UserNotFoundException();
+
+        if(!usuarioBuscado.getSenha().equals(senha)) throw new IncorrectPasswordException();
+
+        return usuarioBuscado;
     }
 }

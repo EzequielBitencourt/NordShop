@@ -9,13 +9,14 @@ import android.widget.ImageButton;
 
 public class Catalogo extends AppCompatActivity {
     private ImageButton buttonCatalogoBackLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalogo);
 
-        buttonCatalogoBackLogin = (ImageButton) findViewById(R.id.imageButton);
-        buttonCatalogoBackLogin.setOnClickListener(new View.OnClickListener() {
+        // buttonCatalogoBackLogin = (ImageButton) findViewById(R.id.imageButton);
+      /*  buttonCatalogoBackLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openLogin();
@@ -23,7 +24,9 @@ public class Catalogo extends AppCompatActivity {
         });
     }
     private void openLogin() {
-        Intent intent = new Intent(this,Login.class);
+        Intent intent = new Intent(this, TelaLogin.class);
         startActivity(intent);
+    }
+    */
     }
 }
