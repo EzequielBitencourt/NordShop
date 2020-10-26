@@ -10,12 +10,12 @@ public class Login {
 
     private static HashMap<String, Usuario> usuarios = new HashMap<>();
 
-    static {
-        Usuario admin = new Usuario("admin", "admin");
+   /* static {
+       Usuario admin = new Usuario("admin", "admin");
 
         usuarios.put(admin.getUsuario(), admin);
     }
-
+*/
     public static Usuario entrar(String usuario, String senha) throws UserNotFoundException, IncorrectPasswordException {
         Usuario usuarioBuscado = usuarios.get(usuario);
 

@@ -5,22 +5,29 @@ import java.io.Serializable;
 public class Usuario implements Serializable {
 
 
-    private String usuario;
-
     public String getUsuario() {
         return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getSenha() {
         return senha;
     }
 
-    private String senha;
-
-    public Usuario(String usuario, String senha) {
-        this.usuario = usuario;
+    public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    private String usuario;
+    private String senha;
+
+    /*public Usuario(String usuario, String senha) {
+        this.usuario = usuario;
+        this.senha = senha;
+    }*/
 
 
 }

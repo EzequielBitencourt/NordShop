@@ -93,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.535"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonCadastrar"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCadastrarTelaLogin"
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/googleefacebook"
             tools:ignore="MissingConstraints" />
@@ -103,7 +103,7 @@
             android:layout_width="128dp"
             android:layout_height="43dp"
             android:text="Login"
-            app:layout_constraintBottom_toTopOf="@+id/buttonCadastrar"
+            app:layout_constraintBottom_toTopOf="@+id/buttonCadastrarTelaLogin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
             app:layout_constraintVertical_bias="0.816" />
 
         <Button
-            android:id="@+id/buttonCadastrar"
+            android:id="@+id/buttonCadastrarTelaLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="180dp"
