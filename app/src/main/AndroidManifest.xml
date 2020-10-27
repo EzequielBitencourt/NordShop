@@ -13,6 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TelaLogin"></activity>
         <activity android:name=".Catalogo" />
+        <activity android:name=".CadastroUsuarioActivity"></activity>
         <activity android:name=".TelaSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
