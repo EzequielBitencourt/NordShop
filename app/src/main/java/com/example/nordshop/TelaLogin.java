@@ -1,5 +1,6 @@
 package com.example.nordshop;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.nordshop.database.Conection;
 import com.example.nordshop.exception.IncorrectPasswordException;
 import com.example.nordshop.exception.UserNotFoundException;
 
@@ -16,12 +18,12 @@ public class TelaLogin extends AppCompatActivity {
     private Button buttonCadastro;
     private EditText inputUsuario;
     private EditText inputSenha;
-
+    Conection db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        db = new Conection(this);
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
         buttonCadastro = (Button) findViewById(R.id.buttonCadastrarTelaLogin);
         inputUsuario = (EditText) findViewById(R.id.username);
@@ -44,11 +46,9 @@ public class TelaLogin extends AppCompatActivity {
     private void actionLogin() {
 
         try {
-            Login.entrar(inputUsuario.getText().toString(), inputSenha.getText().toString());
+            db.CheckUserNameAndPass(inputUsuario.getText().toString(), inputSenha.getText().toString());
             openCatalogo();
         } catch (UserNotFoundException e) {
-
-        } catch (IncorrectPasswordException e) {
 
         }
     }
@@ -62,4 +62,5 @@ public class TelaLogin extends AppCompatActivity {
         Intent intent = new Intent(this, CadastroUsuarioActivity.class);
         startActivity(intent);
     }
+
 }

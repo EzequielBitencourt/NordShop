@@ -24,25 +24,26 @@
         android:id="@+id/editTextPersonUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/prompt_username"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405" />
+        app:layout_constraintVertical_bias="0.342" />
 
     <EditText
         android:id="@+id/editTextPersonPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Senha"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,8 +17,10 @@ public class UsuarioDAO {
 
     public long inserir(Usuario usuario){
         ContentValues values = new ContentValues();
-        values.put("usuario",usuario.getUsuario());
+        values.put("userName",usuario.getUsuario());
         values.put("senha",usuario.getSenha());
        return banco.insert("usuario",null,values);
     }
+
+
 }

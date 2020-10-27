@@ -1,8 +1,11 @@
 package com.example.nordshop.database;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.nordshop.exception.UserNotFoundException;
 
 
 public class Conection extends SQLiteOpenHelper {
@@ -14,16 +17,27 @@ public class Conection extends SQLiteOpenHelper {
         super(context, name, null, version);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table usuario(" +
                 "id integer primary key autoincrement," +
-                "username varchar(50)," +
+                "userName varchar(50)," +
                 "senha varchar(50))");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
+    }
+    public Boolean CheckUserNameAndPass(String username,String senha) throws UserNotFoundException {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from usuario where userName=? and senha=?",new String[]{username,senha});
+        if(cursor.getCount()>0) {
+            return true;
+        }
+        else {
+            throw  new UserNotFoundException();
+        }
     }
 }
