@@ -27,9 +27,10 @@ public class Conection extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        db.execSQL("drop table if exists usuario");
     }
+
     public Boolean CheckUserNameAndPass(String username,String senha) throws UserNotFoundException {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("select * from usuario where userName=? and senha=?",new String[]{username,senha});
