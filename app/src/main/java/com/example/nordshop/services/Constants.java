@@ -1,4 +1,4 @@
-/*package com.example.nordshop.services;
+package com.example.nordshop.services;
 
 
 
@@ -13,8 +13,8 @@ import java.util.Map;
 
 public class Constants {
 
-    public static final String URLAPI = "URL DA API";
-    public static final String URLAPIKEY = "CHAVE DA API";
+    public static final String URLAPI = "https://api.themoviedb.org/3/";
+    public static final String URLAPIKEY = "b881ca47490d5f5879a4cbd0a0b3a94c";
 
     public static Network network = new BasicNetwork(new HurlStack());
 
@@ -35,4 +35,3 @@ public class Constants {
     };
     public static final RequestQueue requestQueue = new RequestQueue(Constants.cache, Constants.network);
 }
-*/
