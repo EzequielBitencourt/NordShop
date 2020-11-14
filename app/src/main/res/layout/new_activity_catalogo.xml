@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/drawerLayout_catalogo">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#131313"
+            app:itemIconTint="#FFEA00"
+            app:itemTextColor="#FFEA00"
+            app:menu="@menu/bottom_navigation"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="25dp"
+            >
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="54dp"
+                android:textSize="40dp"
+                android:fontFamily="@font/sirinstencil_regular"
+                android:textColor="#FFEA00"
+                android:layout_marginLeft="150dp"
+                android:text="NordShop" />
+
+            <ImageView
+                android:id="@+id/logoXmarks"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_gamer" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFEA00"
+        app:itemTextColor="#131313"
+        app:menu="@menu/left_navigation">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

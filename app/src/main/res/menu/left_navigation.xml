@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/left_navi_iniciar"
+        android:title="Iniciar Sessão"/>
+
+    <item
+        android:id="@+id/left_navi_pc"
+        android:title="Pc"/>
+
+    <item
+        android:id="@+id/left_navi_ps3"
+        android:title="Ps3"/>
+
+    <item
+        android:id="@+id/left_navi_ps4"
+        android:title="Ps4"/>
+
+    <item
+        android:id="@+id/left_navi_xbox360"
+        android:title="Xbox 360"/>
+
+    <item
+        android:id="@+id/left_navi_xboxone"
+        android:title="Xbox One"/>
+</menu>
