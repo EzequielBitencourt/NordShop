@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/drawerLayout_cadastro">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#131313"
+            app:itemIconTint="#FFEA00"
+            app:itemTextColor="#FFEA00"
+            app:menu="@menu/bottom_navigation"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="25dp"
+            >
+            <TextView
+                android:layout_width="172dp"
+                android:layout_height="54dp"
+                android:textSize="40dp"
+                android:fontFamily="@font/sirinstencil_regular"
+                android:textColor="#FFEA00"
+                android:layout_marginLeft="150dp"
+                android:text="NordShop" />
+
+            <ImageView
+                android:id="@+id/logoXmarks"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon_gamer" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="210dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/sirinstencil_regular"
+            android:text="CADASTRO"
+            android:textColor="#FFEA00"
+            android:textSize="45dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"/>
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="376dp"
+            android:layout_height="421dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="-290dp"
+            app:srcCompat="@drawable/cadastrobar" />
+
+        <EditText
+            android:id="@+id/editTextCadastroNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-290dp"
+            android:layout_marginTop="170dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/editTextCadastroSobrenome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Sobrenome"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="-210dp"/>
+
+        <EditText
+            android:id="@+id/editTextCadastroCPF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="CPF"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="-210dp" />
+
+        <EditText
+            android:id="@+id/editTextCadastroTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Telefone"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="-210dp"  />
+
+        <EditText
+            android:id="@+id/editTextCadastroEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Email"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="-210dp" />
+
+        <EditText
+            android:id="@+id/editTextCadastroSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            android:layout_marginTop="370dp"
+            android:layout_marginLeft="-210dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="163dp"
+            android:layout_height="52dp"
+            android:background="#CC001121"
+            android:fontFamily="@font/sirinstencil_regular"
+            android:text="Registrar-se"
+            android:textColor="#FFEA00"
+            android:textSize="18dp"
+            android:layout_marginTop="440dp"
+            android:layout_marginLeft="-190dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFEA00"
+        app:itemTextColor="#131313"
+        app:menu="@menu/left_navigation">
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
