@@ -15,26 +15,31 @@ import com.example.nordshop.exception.UserNotFoundException;
 
 public class TelaLogin extends AppCompatActivity {
     private Button buttonLogin;
-    private Button buttonCadastro;
-    private EditText inputUsuario;
-    private EditText inputSenha;
-    Conection db;
+    private Button buttonCadastrar;
+//    private EditText inputUsuario;
+//    private EditText inputSenha;
+//    Conection db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        db = new Conection(this);
-        buttonLogin = (Button) findViewById(R.id.buttonLogin);
-        buttonCadastro = (Button) findViewById(R.id.buttonCadastrarTelaLogin);
-        inputUsuario = (EditText) findViewById(R.id.username);
-        inputSenha = (EditText) findViewById(R.id.password);
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                actionLogin();
-            }
-        });
-        buttonCadastro.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.new_activity_login);
+        this.getSupportActionBar().hide();
+//        db = new Conection(this);
+
+        buttonCadastrar = (Button) findViewById(R.id.buttonCadastrar);
+
+//        buttonLogin = (Button) findViewById(R.id.buttonLogin);
+//        inputUsuario = (EditText) findViewById(R.id.username);
+//        inputSenha = (EditText) findViewById(R.id.password);
+//
+//
+//        buttonLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                actionLogin();
+//            }
+//        });
+        buttonCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openCadastro();
@@ -43,20 +48,20 @@ public class TelaLogin extends AppCompatActivity {
 
     }
 
-    private void actionLogin() {
+//    private void actionLogin() {
+//
+//        try {
+//            db.CheckUserNameAndPass(inputUsuario.getText().toString(), inputSenha.getText().toString());
+//            openCatalogo();
+//        } catch (UserNotFoundException e) {
+//
+//        }
+//    }
 
-        try {
-            db.CheckUserNameAndPass(inputUsuario.getText().toString(), inputSenha.getText().toString());
-            openCatalogo();
-        } catch (UserNotFoundException e) {
-
-        }
-    }
-
-    private void openCatalogo() {
-        Intent intent = new Intent(this, Catalogo.class);
-        startActivity(intent);
-    }
+//    private void openCatalogo() {
+//        Intent intent = new Intent(this, Catalogo.class);
+//        startActivity(intent);
+//    }
 
     private void openCadastro() {
         Intent intent = new Intent(this, CadastroUsuarioActivity.class);

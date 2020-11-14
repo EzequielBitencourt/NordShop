@@ -15,7 +15,8 @@ public class TelaSplash extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.new_activity_splash);
+        this.getSupportActionBar().hide();
 
 
         new Handler().postDelayed(new Runnable() {
@@ -33,7 +34,11 @@ public class TelaSplash extends AppCompatActivity {
         finish();
     }
 
-
+    private void openCadastro() {
+        Intent intent = new Intent(this, CadastroUsuarioActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 

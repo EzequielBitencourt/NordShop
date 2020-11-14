@@ -1,13 +1,10 @@
 package com.example.nordshop.services;
 
-import android.app.AsyncNotedAppOp;
-import android.app.DownloadManager;
 import android.widget.ImageView;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ImageView;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -19,7 +16,7 @@ import java.io.InputStream;
 public class GameServices {
 
     public static void loadImage(ImageView imageView, String urlImage){
-        new DownloadImageTask(imageView).execute(urlImage);
+        new DonwloadImageTask(imageView).execute(urlImage);
     }
 
     public static void searchImageGame(String url, Response.Listener<Bitmap> listener){
@@ -27,14 +24,20 @@ public class GameServices {
         Constants.requestQueue.start();
         Log.v("request", "create request");
 
-        ImageRequest imgReq = new ImageRequest(url, listener,0,0,null, null,Log.e("request", Error.getMessage()););
+        ImageRequest imgReq = new ImageRequest(url, listener,0,0,
+                null, null, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("request", error.getMessage());
+            }
+        });
         Constants.requestQueue.add(imgReq);
     }
 
     public static void searchGameId(int id, Response.Listener<JSONObject> listener){
         Constants.requestQueue.start();
 
-        String url = Constants.URLAPI+""+id+""+Constants.URLAPIKEY;
+        String url = Constants.URLAPI+""+id+""+ Constants.URLAPIKEY;
 
         JsonObjectRequest jor = new JsonObjectRequest(Request.Method.GET, url, null, listener, null);
 
@@ -51,8 +54,8 @@ public class GameServices {
             String urldisplay = urls[0];
             Bitmap mIcon = null;
             try{
-                inputStream in = new java.net.URL(urldisplay).openStream();
-                mIcon = BitmapFactoy.decodeStream(in);
+                InputStream in = new java.net.URL(urldisplay).openStream();
+                mIcon = BitmapFactory.decodeStream(in);
             }catch (Exception e){
                 Log.e("Error", e.getMessage());
                 e.printStackTrace();
